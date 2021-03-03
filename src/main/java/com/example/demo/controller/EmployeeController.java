@@ -11,10 +11,9 @@ import java.util.List;
 public class EmployeeController {
 
     @RequestMapping("/emp")
-    public List<Employee> getEmployees()
+    public String getEmployees()
     {
-        List<Employee> employeesList = new ArrayList<Employee>();
-        employeesList.add(new Employee(1,"lokesh","gupta","howtodoinjava@gmail.com"));
-        return employeesList;
+       
+        return "api test";
     }
 }
